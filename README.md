@@ -1,50 +1,74 @@
-# Windows-Server-2025-AD-Home-Lab
+# Windows Server 2025 Active Directory Home Lab
 
-+ Summary +
-I will be documenting my home lab created in VMware Workstation.
-My initial goal is to develop a home lab in which I can practice server admin, networking, basic cyber security and virtualization. As I go, I'd like to scale it to add more aspects that encompass different disciplines within the practices of IT.
+## Summary
 
-Work commenced 26/07/2026.
-Repository opened 04/08/2026. (Work to be recorded moving forward).
+This repository documents my Windows Server 2025 home lab built in VMware Workstation.
 
-# Lab
-+ Server | Role +
+The goal of this project is to develop practical experience with Windows Server administration, networking, Active Directory, virtualization and basic cybersecurity. As the lab grows, I plan to expand it into other areas of IT infrastructure and cloud computing.
 
-Domain Controller | Active Directory Domain Services & DNS
-Server-1 | Domain member server
-Server-2 | Domain member server
+- **Lab started:** 26/07/2026
+- **GitHub repository created:** 04/08/2026
 
-# Completed 4/08
+---
 
-* Created 3 Windows Server VMs
-* Configured DC01 server as Domain Controller
-* Created 'DTech.com' as Active Directory domain
-* Joined Server-1 and Server-2 to domain
-      * NOTE: Required troubleshooting as unable to initially join servers to domain
-      * Ran CMD to diagnose and understand issue - DNS was incorrect on member servers
-      * Corrected and servers joined
-* Created 3 user accounts - Damian Piilua, Pamian Diilua & Finance Gai
-* Created the finance-team group
-* Added user 'Finance Gai' to finance-team group
-* Created a share folder
-* Given specific access and permissions to finance-team group
+## Lab Environment
 
-# Skills utilized
+| Server | Role |
+|---------|------|
+| DC01 | Domain Controller (Active Directory Domain Services & DNS) |
+| Server-1 | Domain Member Server |
+| Server-2 | Domain Member Server |
 
-* Windows Server 2025
-* Active Directory Domain Services
-* DNS configuration
-* Domain links
-* NTFS permissions & SMB file sharing
-* Virtual Network
-* Command prompt diagnostics and troubleshooting
+---
 
-# What to do next
+## Completed (04/08/2026)
 
-* Add Powershell automation, potentially
-* Group policies
-* Possibly configure 
-* Complete set up and prepare for configuration into cloud
+- Created three Windows Server 2025 virtual machines in VMware.
+- Promoted **DC01** to a Domain Controller.
+- Created the **DTech.com** Active Directory domain.
+- Successfully joined **Server-1** and **Server-2** to the domain.
+    - Initial attempts failed due to incorrect DNS configuration.
+    - Used Command Prompt tools (`ping`, `nslookup`, and `nltest`) to troubleshoot the issue.
+    - Corrected the DNS configuration and successfully joined both servers.
+- Created three Active Directory user accounts:
+    - Damian Piilua
+    - Pamian Diilua
+    - Finance Gai
+- Created the **finance-team** security group.
+- Added **Finance Gai** to the **finance-team** group.
+- Created a shared folder.
+- Assigned NTFS and share permissions to the **finance-team** security group.
 
+---
 
-04/08/2026
+## Skills Used
+
+- Windows Server 2025
+- Active Directory Domain Services (AD DS)
+- DNS configuration
+- Domain administration
+- User and security group management
+- NTFS permissions
+- SMB file sharing
+- VMware Workstation
+- Virtual networking
+- Command Prompt diagnostics and troubleshooting
+
+---
+
+## Next Steps
+
+- Create Organizational Units (OUs)
+- Configure Group Policy
+- Configure DHCP
+- Automate common administration tasks with PowerShell
+- Expand the lab into a cloud environment (Azure)
+
+---
+
+### Progress Log
+
+**04/08/2026**
+
+Initial Active Directory environment completed with a functioning Domain Controller, two domain member servers, user management, security groups and file permissions.
+
