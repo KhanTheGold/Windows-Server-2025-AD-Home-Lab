@@ -1,0 +1,58 @@
+# Users, Groups and File Permissions
+
+## Creating Users
+
+Created a few users using **Active Directory Users and Computers**.
+
+Current users include:
+
+- Damian Piilua
+- Pamian Diilua
+- Finance Gai
+
+---
+
+## Groups
+
+A group called **finance-team** was created to manage access to shared resources.
+
+Permissions were given to the group.
+
+Current group membership:
+
+| Group | Members |
+| ------ | ------- |
+| finance-team | Finance Gai |
+
+---
+
+## Shared Folder
+
+A shared folder was created for the Finance department.
+
+The folder was shared over the network using SMB and configured so that only authorised users could access it.
+
+---
+
+## Permissions
+
+Permissions were assigned to the **finance-team** security group rather than individual user accounts.
+
+Permission types configured:
+
+- Share Permissions
+- NTFS Permissions
+
+This allows members of the **finance-team** group to access the shared folder while preventing unauthorised users from viewing or modifying its contents.
+
+---
+
+## Outcome
+
+At this stage of the project:
+
+- Three Active Directory users have been created.
+- A group has been configured.
+- Users have been added to the appropriate group.
+- A shared folder has been created.
+- Group-based access has been successfully implemented using NTFS and Share permissions.
