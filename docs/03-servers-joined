@@ -1,0 +1,12 @@
+# Joining Member Servers to the Domain
+
+Server-1 and Server-2 were joined to the `DTech.com` domain.
+
+## DNS Requirement
+
+  ```text
+192.168.10.5
+  
+Both member servers were configured to use the Domain Controller IP address as their DNS server.
+    Note: Will change to DHCP instead of manual input
+
