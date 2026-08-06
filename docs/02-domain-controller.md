@@ -17,6 +17,6 @@ Server DC01 (primary server) was promoted to a Domain Controller using Active Di
 Tests done with:
 
 ```cmd
-dcdiag
-nslookup DTech.com
-nltest /dsgetdc:DTech.com
+'dcdiag'
+'nslookup' DTech.com
+'nltest /dsgetdc:'DTech.com
