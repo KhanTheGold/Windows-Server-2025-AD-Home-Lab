@@ -16,5 +16,4 @@ For this lab, I created three Windows Server 2025 virtual machines in VMware:
 | Server-1 | 192.168.10.6 | 192.168.10.5 |
 | Server-2 | 192.168.10.7 | 192.168.10.5 |
 
-The Domain Controller is running DNS, so both member servers are configured to use its IP address as their DNS server. This allows them to locate the Active Directory domain and successfully join it
-All three servers are connected to the same VMware NAT network so they can communicate with each other
+The Domain Controller is running DNS, so both member servers are configured to use its IP address as their DNS server. This allows them to locate the Active Directory domain and successfully join it. All three servers are connected to the same VMware NAT network so they can communicate with each other.
